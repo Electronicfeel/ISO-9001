@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Documental ISO 9001</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showTab('compras')">Compras</a></li>
+                    <li><a href="#" onclick="showTab('recursosHumanos')">Recursos Humanos</a></li>
+                    <li><a href="#" onclick="showTab('tic')">TIC</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="compras" class="tab">
+            <h2>Formulario de Compras</h2>
+            <form>
+                <label for="producto">Producto:</label>
+                <input type="text" id="producto" name="producto">
+                <br>
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad">
+                <br>
+                <label for="proveedor">Proveedor:</label>
+                <input type="text" id="proveedor" name="proveedor">
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="recursosHumanos" class="tab" style="display:none;">
+            <h2>Formulario de Recursos Humanos</h2>
+            <form>
+                <label for="empleado">Empleado:</label>
+                <input type="text" id="empleado" name="empleado">
+                <br>
+                <label for="puesto">Puesto:</label>
+                <input type="text" id="puesto" name="puesto">
+                <br>
+                <label for="departamento">Departamento:</label>
+                <input type="text" id="departamento" name="departamento">
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="tic" class="tab" style="display:none;">
+            <h2>Formulario de TIC</h2>
+            <form>
+                <label for="tecnologia">Tecnología:</label>
+                <input type="text" id="tecnologia" name="tecnologia">
+                <br>
+                <label for="soporte">Soporte:</label>
+                <input type="text" id="soporte" name="soporte">
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
